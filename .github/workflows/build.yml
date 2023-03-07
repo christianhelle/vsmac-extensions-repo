@@ -31,7 +31,7 @@ jobs:
     - name: Publish Legacy Repo
       uses: actions/upload-artifact@v2
       with:
-        name: Repositories
+        name: Legacy
         path: |
           legacy/*.mrep
           legacy/index.html
@@ -39,7 +39,7 @@ jobs:
     - name: Publish Beta Repo
       uses: actions/upload-artifact@v2
       with:
-        name: Repositories
+        name: Beta
         path: |
           beta/*.mrep
           beta/index.html
@@ -47,7 +47,7 @@ jobs:
     - name: Publish Stable Repo
       uses: actions/upload-artifact@v2
       with:
-        name: Repositories
+        name: Stable
         path: |
           stable/*.mrep
           stable/index.html
