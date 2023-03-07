@@ -1,0 +1,59 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: legacy - vstool setup rep-build
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      working-directory: legacy
+      continue-on-error: true
+
+    - name: beta - vstool setup rep-build
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      working-directory: beta
+      continue-on-error: true
+
+    - name: stable - vstool setup rep-build
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      working-directory: stable
+      continue-on-error: true
+
+    - name: Publish Legacy Repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: Repositories
+        path: |
+          legacy/*.mpack
+          legacy/*.mrep
+          legacy/index.html
+
+    - name: Publish Beta Repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: Repositories
+        path: |
+          beta/*.mpack
+          beta/*.mrep
+          beta/index.html
+          stable/*.mpack
+          stable/*.mrep
+          stable/index.html
+
+    - name: Publish Stable Repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: Repositories
+        path: |
+          stable/*.mpack
+          stable/*.mrep
+          stable/index.html
