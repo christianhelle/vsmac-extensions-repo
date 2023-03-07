@@ -14,17 +14,17 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: legacy - vstool setup rep-build
-      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $PWD
       working-directory: legacy
       continue-on-error: true
 
     - name: beta - vstool setup rep-build
-      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $PWD
       working-directory: beta
       continue-on-error: true
 
     - name: stable - vstool setup rep-build
-      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $(shell pwd)
+      run: /Applications/Visual\ Studio.app/Contents/MacOS/vstool setup rep-build $PWD
       working-directory: stable
       continue-on-error: true
 
