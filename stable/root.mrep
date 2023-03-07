@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Addin>
+    <Url>ApiClientCodeGenerator-1.7.2.mpack</Url>
+    <Addin>
+      <Id>ApiClientCodeGenerator</Id>
+      <Namespace>ApiClientCodeGen.VSMac</Namespace>
+      <Name>REST API Client Code Generator</Name>
+      <Version>1.7.2</Version>
+      <BaseVersion />
+      <Author>Christian Resma Helle</Author>
+      <Copyright />
+      <Url />
+      <Description>A collection of code generators for Swagger / OpenAPI specification files</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">14955882</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+</Repository>
