@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Addin>
-    <Url>ApiClientCodeGenerator-1.7.2.mpack</Url>
+    <Url>ApiClientCodeGenerator.mpack</Url>
     <Addin>
       <Id>ApiClientCodeGenerator</Id>
       <Namespace>ApiClientCodeGen.VSMac</Namespace>
