@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Repository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Repository>
-    <Url>root.mrep</Url>
+    <Url>stable/root.mrep</Url>
     <LastModified>2022-12-29T07:58:57.7314918+00:00</LastModified>
   </Repository>
 </Repository>
