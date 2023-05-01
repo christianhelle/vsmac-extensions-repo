@@ -6,7 +6,7 @@
       <Id>ApiClientCodeGenerator</Id>
       <Namespace>ApiClientCodeGen.VSMac</Namespace>
       <Name>REST API Client Code Generator</Name>
-      <Version>1.7.12</Version>
+      <Version>1.7.13</Version>
       <BaseVersion />
       <Author>Christian Resma Helle</Author>
       <Copyright />
@@ -16,7 +16,7 @@
       <Dependencies />
       <OptionalDependencies />
       <Properties>
-        <Property name="DownloadSize">14842396</Property>
+        <Property name="DownloadSize">14843526</Property>
       </Properties>
     </Addin>
   </Addin>
