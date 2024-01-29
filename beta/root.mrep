@@ -6,7 +6,7 @@
       <Id>ApiClientCodeGenerator</Id>
       <Namespace>ApiClientCodeGen.VSMac</Namespace>
       <Name>REST API Client Code Generator</Name>
-      <Version>1.9.3455</Version>
+      <Version>1.9.3456</Version>
       <BaseVersion />
       <Author>Christian Resma Helle</Author>
       <Copyright />
